@@ -1,0 +1,21 @@
+{
+  "name": "syncvert",
+  "version": "0.0.1",
+  "description": "Backend server for Syncvert",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node index.js",
+    "server": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GJLMoTea",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "socket.io": "^4.8.1",
+    "xss": "^1.0.15"
+  }
+}
