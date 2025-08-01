@@ -4,9 +4,13 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
     plugins: [react()],
     server: {
-        port: 5173, // 開發用，預設值
+        port: 5173,
         proxy: {
-            '/socket.io': 'http://localhost:3001',
+            '/socket.io': {
+                target: 'http://gjlmotea.com:3001',
+                ws: true,              // ✅ 開啟 WebSocket 支援
+                changeOrigin: true,    // ✅ 一般也會加這行
+            },
         },
     },
 });

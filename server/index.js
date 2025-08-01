@@ -14,6 +14,15 @@ const io = new Server(server, {
     },
 });
 
+// ======== 正式環境才需要加入這段
+// const buildPath = path.join(__dirname, '../client/dist');
+// app.use(express.static(buildPath));
+//
+// app.get(/^\/(?!api)(?!.*:\/\/).*$/, (req, res) => {
+//     res.sendFile(path.join(buildPath, 'index.html'));
+// });
+// ========
+
 // 🧠 全局狀態記憶（以記憶體暫存，目前僅支援單一房間共享）
 let currentState = {
     curl: '',
