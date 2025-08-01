@@ -6,6 +6,8 @@ const socket = io(import.meta.env.VITE_SOCKET_HOST, {
     auth: { token: 'demo' },
 });
 
+console.log(`Socket連線到：${import.meta.env.VITE_SOCKET_HOST}`);
+
 // 解析 curl 中資訊
 function extractInfoFromCurl(curl) {
     const urlMatch = curl.match(/curl '([^']+)'/);
