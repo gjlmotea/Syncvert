@@ -24,3 +24,7 @@ npm run dev
 ```
 
 預設啟動於：http://localhost:5173
+
+## 部署
+
+正式環境要將註解開啟

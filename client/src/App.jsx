@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
 
-// 建立 socket 連線
-const socket = io('gjlmotea.com:3001', {
+// socket 設定檔自動讀取
+const socket = io(import.meta.env.VITE_SOCKET_HOST, {
     auth: { token: 'demo' },
 });
 
