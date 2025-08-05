@@ -7,7 +7,7 @@ export default defineConfig({
         port: 5173,
         proxy: {
             '/socket.io': {
-                target: 'http://gjlmotea.com:3001',
+                target: 'https://gjlmotea.com:3001',
                 ws: true,
                 changeOrigin: true,
             },
